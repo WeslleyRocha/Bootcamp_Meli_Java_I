@@ -3,14 +3,15 @@ package PraticaIntegradora02.Exercicio2;
 public class Produto {
 
     String nome;
-    int preco;
+    double preco;
 
-    public Produto(String nome, Double preco){
-
+    public Produto(String nome, double preco){
+        this.nome = nome;
+        this.preco = preco;
     }
 
     public double calcular(int qtdProdutos){
-        return preco * qtdProdutos;
+        return this.preco * qtdProdutos;
     }
 
     public String getNome() {
